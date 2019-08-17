@@ -120,14 +120,25 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DTO\BaseDTO.cs" />
+    <Compile Include="DTO\PassBook.cs" />
+    <Compile Include="DTO\PassWord.cs" />
+    <Compile Include="DTO\SystemSettings.cs" />
+    <Compile Include="Helper\Interface\IPasswordHelper.cs" />
+    <Compile Include="Helper\PasswordHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Interface\IBaseRepository.cs" />
+    <Compile Include="Repository\PassBookRepository.cs" />
+    <Compile Include="Repository\SystemSettingsRepository.cs" />
     <EmbeddedResource Include="Properties\QuickPass.Backend.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.8</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuickPass.Backend
+namespace QuickPass.Backend.Helper.Interface
 {
-    public class Class1
+    interface IPasswordHelper
     {
+        string GenerateNewPassword();
     }
 }
